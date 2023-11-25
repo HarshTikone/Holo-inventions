@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AR Website with HIRO Marker and Video</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -10,7 +10,8 @@
 <body style="margin: 0; overflow: hidden;">
 
     <!-- AR Scene with HIRO marker and video -->
-    <a-scene embedded arjs='trackingMethod: best;'>
+    <a-scene embedded arjs='trackingMethod: best;' vr-mode-ui="enabled: false">
+        <!-- Camera with look-controls -->
         <a-entity camera look-controls fov="10" near="0.1" far="10000"></a-entity>
         <a-marker type="pattern" url="pattern-shutterstock_583717939.patt">
             <!-- Your AR content goes here -->
@@ -19,4 +20,4 @@
         </a-marker>
     </a-scene>
 </body>
-</html> 
+</html>
