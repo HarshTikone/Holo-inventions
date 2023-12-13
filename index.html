@@ -16,10 +16,10 @@
         
         <!-- Visual marker to help see the orientation -->
         <a-marker preset="hiro" id="marker">
-            <a-entity position="1 -0.3 1" rotation="90 0 0">
+            <a-entity position="1 -0.3 1" rotation="0 0 0">
                 <a-plane color="black" width="3" height="1.5" position="0 0 1"material="opacity: 1; transparent: true;" ></a-plane>
                 <a-video src="your-2d-video.mp4" preload="auto" id="vid" response-type="arraybuffer" loop width="1" height="0.5" background="transparent" material="opacity: 1; transparent: true; side: double;" position="0 0 1.5" webkit-playsinline playsinline></a-video>
-                <a-sound src="your-2d-video.mp4" preload="auto" autoplay="true" loop position="0 0 0.5" />
+                <a-sound src="your-2d-video.mp4" preload="auto" autoplay="true" loop position="0 0 1.5" />
                 <a-plane color="grey" width="3" height="1.4" position="1.5 0 1"material="opacity: 1; transparent: true;" rotation="0 -90 0"></a-plane>
                 <a-plane color="grey" width="3" height="1.4" position="-1.5 0 1"material="opacity: 1; transparent: true;" rotation="0 90 0"></a-plane>
                 <a-plane color="grey" width="3" height="3" position="0 0.7 1"material="opacity: 1; transparent: true;" rotation="90 0 0"></a-plane>
